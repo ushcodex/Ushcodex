@@ -1,241 +1,245 @@
-body{
-    margin: 0px;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    text-align: justify;
-    
+
+body {
+	margin: 0px;
+	font-family: "Montserrat", sans-serif;
+	text-align: justify;
+	overflow-x: hidden;
 }
 
+header {
+	background: linear-gradient(300deg, #5834AF, #F7931E);
+	color: white;
+}
+
+nav {
+	display: flex;
+	padding-left: 2rem;
+	padding-top: 1rem;
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	opacity: 0.8;
+	max-width: 1080px;
+}
+
+
+nav .container {
+	align-items: center;
+	padding-right: 1rem;
+	justify-self: flex-end;
+}
+
+nav a {
+	color: white;
+	font-weight: 500;
+	text-decoration: none;
+	margin: 0rem 1.5rem 1rem;
+	
+}
+
+nav a:hover {
+	color: #ccc;
+}
 
 #logo {
-    width: 50px;
-    margin-right: auto;
+	width: 40px;
+	height: 40px;
+	fill: white;
+	margin-right: 1rem;
 }
-
-nav{
-    display:flex;
-    align-items: center;
-    justify-content:space-between;
-    padding-left: 2rem;
-    padding-top: 1rem;
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-    opacity: 0.8;
-    max-width: 1080px;
-}
-
-button a {
-    color: #FFFFFF;
-}
-
-.outline a {
-    color: #42498E;
-}
-
-#projects .container{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
-
-ul {
-    list-style-type:none;
-}
-
-li {
-    padding: 0.8rem 0.2rem;
-}
-
-nav .container{
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    align-items: center;
-    padding-right: 3rem;
-}
-
-#hero img{
-    position:absolute;
-    top: 0px;
-    right: 0px;
-    height: 65vh;
-}
-h1 {
-    font-size: xxx-large;
-    font-weight: 700;
-    margin-bottom: 01rem;
-}
-
-
-#hero {
-    padding: 2rem;
-    height: 95vh;
-    background: linear-gradient(300deg, #5834AF, #F7931E);
-    color: white;
-    width:100vw;
-    
+button {
+	padding: 1em 1.2em;
+	border-radius: 1em;
+	border: none;
+	background-color: #42498E;
+	color: white;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+	cursor: pointer;
 }
 
 #hero button{
     background: linear-gradient(120deg, #5834AF, #F7931E); 
 }
 
-.herocontent{
-    padding-top: 60vh;
-
-}
-
-.herocontent h2{
-    font-weight: 300;
-    font-size:large;
-    margin-top: 0px;
-    padding-top: 0px;
-}
-
-.icon{
-    height: 20px;
-    fill: #42498E;    
+#hero a {
+	color: white;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
+	color: #42498E;
+	font-weight: bolder;
 }
 
-nav a{
-    color: white;
-    font-weight: 500;
+#about button a{
+	color: white;
 }
 
-button{
-    padding: 1em 1.2em;
-    border-radius: 2em;
-    border: none;
-    background-color: #42498E;
-    color: white;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-    cursor:pointer;
+main {
+	background: linear-gradient(90deg, #BFC1E0, #FFFFFF);
 }
 
-.outline{
-    background:none;
-    box-shadow: none;
-    color: #42498E;
-    border: none;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    border: solid 2px;
-    
+.outline {
+	background: none;
+	box-shadow: none;
+	color: #42498E;
+	border: none;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	border: solid 2px;
 }
 
-#projects{
-    background: linear-gradient(90deg, #BFC1E0, #FFFFFF );
-    padding: 5rem 2rem ;
+.outline:hover {
+	background-color: #42498E;
+	color: white;
 }
 
-#projects h2{
-    margin-top: 0px;
-    font-size: xx-large;
-    color: #ff8902;
+
+.icon {
+	height: 20px;
+	fill: #42498E;
 }
 
-h3 {
-    font-size: x-large;
-    color: #42498E;
-    font-weight: normal;
+#hero {
+	padding: 2rem;
+	height: 95vh;
+	background: linear-gradient(300deg, #5834AF, #F7931E);
+	color: white;
 }
 
-h2 {
-    font-weight: 500;
+#hero img {
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	max-height: 65vh;
+	object-fit:contain;
+}
+
+.herocontent {
+	padding-top: 60vh;
+	text-align: center;
+}
+
+.herocontent h1 {
+	font-size: xxx-large;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.herocontent h2 {
+	font-size: large;
+	font-weight: 300;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#projects {
+	padding: 5rem 2rem;
+}
+
+#projects h2 {
+	margin-top: 0px;
+	font-size: xx-large;
+	color: #ff8902;
+}
+
+#projects .container {
+	flex-direction: row-reverse;
+	align-items: flex-start;
+	margin-left: 0px;
+}
+
+#projects img {
+	width: 100%;
+	height: 200px;
+	object-fit: contain;
+	margin-bottom: 2rem;
+}
+
+#projects ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#projects li {
+	padding: 0.8rem 0.2rem;
+	border-bottom: 1px solid #ccc;
+}
+
+#projects li:last-child {
+	border-bottom: none;
 }
 
 #about {
-    padding: 5rem 2rem ;
-    
+	padding: 5rem 2rem;
+	
 }
+
+
+
 
 #contact {
-    padding: 5rem 2rem ;
-
+	padding: 5rem 2rem;
+	
 }
 
-#contact li a {
-    color: black;
-    display: flex;
-    align-items: flex-end;
-    
-    gap: 20px;
-}
-
-#contact li  {
-    color: black#42498E;
-    font-weight: 550;
-    display: flex;
-    align-items: flex-end;
-    font-size: smaller;
-    gap: 20px;
+#contact ul{
+	list-style: none;
+	margin-bottom: 2rem;
+	color: #42498E;
+	
 }
 
 #footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: linear-gradient(120deg, #5834AF, #F7931E); 
-    color: white;
-    position:absolute;
-    width:100vw;
+	background: linear-gradient(120deg, #5834AF, #F7931E);
+	color: white;
+	padding: 2rem;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
 }
 
 #footer ul {
-    display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: 0.7rem;
 }
 
-#footer .icon {
-    fill: white;
+#footer li {
+	margin-bottom: 1rem;
 }
 
-.container{
-    display:flex;
-    max-width: 1080px;
-    gap: 20px;
-
+#footer a {
+	color: white;
+	text-decoration: none;
 }
 
-
-@media (max-width:920px) {
-
-  .container{
-    flex-wrap: wrap;
-  }
-   
-  nav .container{
-    justify-content: flex-end;
-  }
-
-  #projects .container {
-    flex-direction: column;
-    
-  }
-  #projects img{
-    width:80vw:
-    height: fit-content;
-  }
-  #hero img{
-    right: inherit;
-  }
-  
-  #hero {
-    width:700px;
-  }
-  
-  footer {
-    width:1000px;
-    justify-content: left;
-  }
+.container {
+	display: flex;
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 2rem;
 }
 
-
-
-
-
+@media (max-width: 920px) {
+	.container {
+		flex-wrap: wrap;
+	}
+	nav .container {
+		justify-content: flex-end;
+	}
+	#projects .container {
+		flex-direction: column;
+	}
+	#projects img {
+		object-fit:cover;
+		height: auto;
+	}
+	#about img{
+		height: auto;
+		max-width: 80%;
+	}
+}
